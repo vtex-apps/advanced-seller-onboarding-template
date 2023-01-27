@@ -1,0 +1,13 @@
+.boxContainer {
+  padding: 6rem;
+}
+
+.uploadedFileContent {
+  padding: 1rem
+}
+
+@media screen and (max-width: 639px) {
+  .boxContainer {
+    padding: 0;
+  }
+}

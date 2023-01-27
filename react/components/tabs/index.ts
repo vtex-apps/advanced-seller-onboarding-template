@@ -1,0 +1,6 @@
+export { default as GeneralDataTab } from './GeneralDataTab'
+export { default as CompanyDataTab } from './CompanyDataTab'
+export { default as CommercialDataTab } from './CommercialDataTab'
+export { default as UploadDocumentsTab } from './UploadDocumentsTab'
+export { default as AcceptTermsAndConditionsTab } from './AcceptTermsAndConditionsTab'
+export { default as TabsContainer } from './TabsContainer'

@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema#",
+  "title": "SellerInvitation",
+  "type": "object",
+  "properties": {
+    "sellerInvitationVtexObject": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "sellerName": {
+          "type": "string",
+          "title": "Seller name"
+        },
+        "sellerEmail": {
+          "type": "string",
+          "title": "Seller email",
+          "format": "email"
+        },
+        "status": {
+          "title": "Status",
+          "type": "string"
+        }
+      }
+    },
+    "sellerAccountName": {
+      "type": "string",
+      "title": "Seller Account Name"
+    },
+    "connectedSellerObject": {
+      "type": "object",
+      "properties": {
+        "shippingCharge": {
+          "type": "number",
+          "title": "Shiping Charge"
+        },
+        "freeDeliveryThreshold ": {
+          "type": "string",
+          "title": "Free Delivery Threshold"
+        },
+        "etaFrom": {
+          "type": "number",
+          "title": "ETA From"
+        },
+        "etaTo": {
+          "type": "number",
+          "title": "ETA To"
+        },
+        "returnPeriod": {
+          "type": "number",
+          "title": "Return Period"
+        },
+        "paymentProviderMerchantId": {
+          "type": "string",
+          "title": "paymentProvider Merchant Id"
+        }
+      }
+    },
+    "status": {
+      "title": "Onboarding Status",
+      "type": "string",
+      "enum": [
+        "Prelead",
+        "Lead",
+        "Signed",
+        "Rejected",
+        "Approved",
+        "Connected"
+      ]
+    },
+    "documentLinks": {
+      "title": "Document links",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fileLink": {
+            "type": "string",
+            "title": "File Link"
+          },
+          "fileName": {
+            "type": "string",
+            "title": "File Name"
+          }
+        },
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "email": {
+      "type": "string",
+      "title": "Email",
+      "format": "email"
+    },
+    "companyName": {
+      "title": "Company name",
+      "type": "string"
+    },
+    "lastName": {
+      "title": "Last name",
+      "type": "string"
+    },
+    "firstName": {
+      "title": "First name",
+      "type": "string"
+    },
+    "jobTitle": {
+      "title": "Job Title",
+      "type": "string"
+    },
+    "phone": {
+      "title": "Phone",
+      "type": "string"
+    },
+    "companyDescription": {
+      "title": "Company description",
+      "type": "string"
+    },
+    "website": {
+      "title": "Website",
+      "type": "string"
+    },
+    "companyType": {
+      "title": "Company Type",
+      "type": "string"
+    },
+    "isPayingVat": {
+      "type": "boolean"
+    },
+    "vatin": {
+      "title": "VAT Identification Number",
+      "type": "string"
+    },
+    "tradeRegistrationNumber": {
+      "title": "Trade Register Registration Number",
+      "type": "string"
+    },
+    "companyCountry": {
+      "title": "Company country",
+      "type": "string"
+    },
+    "companyPostalCode": {
+      "title": "Company country",
+      "type": "string"
+    },
+    "companyCounty": {
+      "title": "Company county",
+      "type": "string"
+    },
+    "companyCity": {
+      "title": "Company city",
+      "type": "string"
+    },
+    "companyStreet": {
+      "title": "Company street",
+      "type": "string"
+    },
+    "companyStreetNumber": {
+      "title": "Company street number",
+      "type": "string"
+    },
+    "companyNeighborhood": {
+      "title": "Company neighborhood",
+      "type": "string"
+    },
+    "companyAddressComplement": {
+      "title": "Company address complement",
+      "type": "string"
+    },
+    "companyBank": {
+      "title": "Company bank",
+      "type": "string"
+    },
+    "iban": {
+      "type": "string"
+    },
+    "noOfProducts": {
+      "title": "Number of products",
+      "type": "number"
+    },
+    "productsCategories": {
+      "title": "Products Categories",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "ecommercePlatform": {
+      "title": "Ecommerce platform",
+      "type": "string"
+    },
+    "connectedMarketplaces": {
+      "title": "Connected marketplaces",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "referral": {
+      "type": "string"
+    },
+    "hasAgreedToPrivacyPolicy": {
+      "type": "boolean"
+    },
+    "hasAgreedToVtexPolicy": {
+      "type": "boolean"
+    },
+    "sellerCreatedIn": {
+      "type": "string"
+    },
+    "sellerLastInteractionIn": {
+      "type": "string"
+    }
+  },
+  "v-indexed": [
+    "lastName",
+    "firstName",
+    "email",
+    "companyName",
+    "vatin",
+    "status",
+    "lastInteractionIn",
+    "sellerAccountName",
+    "sellerInvitationVtexObject"
+  ],
+  "additionalProperties": false,
+  "v-cache": false,
+  "v-immediate-indexing": true
+}

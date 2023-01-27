@@ -1,0 +1,21 @@
+{
+  "name": "Advanced Seller Onboarding",
+  "headline": "Seleção e registro aprimorados do vendedor do Marketplace",
+  "overview": "O aplicativo melhora a integração do vendedor por meio de um processo de várias etapas que permite o envio de um formulário de inscrição configurável, a filtragem de potenciais vendedores, bem como a aceitação dos termos e condições do mercado. O aplicativo permite a sincronização rápida de categorias entre o marketplace e o vendedor, bem como a validação dos dados fiscais. O Advanced Seller Onboarding também inclui o aplicativo Seller Link, um aplicativo que exibe um bloco de página estático do vendedor.",
+  "features": [
+    "Permite o envio de um formulário de integração configurável",
+    "Permite a filtragem de potenciais vendedores do marketplace",
+    "Exibe o status de integração do vendedor em tempo real.",
+    "Inclui reCAPTCHA em formulários de validação.",
+    "Inclui um formulário de aceitação de termos e condições.",
+    "Inclui um bloco de página de vendedor estático.",
+    "Permite integração rápida do vendedor.",
+    "Permite validação do código fiscal.",
+    "Permite acesso baseado em API."
+  ],
+  "additionalInformation": "Este aplicativo e todos os serviços afiliados são fornecidos 'como estão', sem qualquer tipo de garantia, seja expressa ou implícita. Nem o editor nem seus parceiros, afiliadas, funcionários ou contratantes garantem que este aplicativo atenderá às suas exigências, fornecerá uso ininterrupto ou operará sem demora ou sem erros. Nem a editora nem seus parceiros, afiliadas, funcionários ou contratados assumem qualquer responsabilidade por quaisquer erros e mau funcionamento dentro do aplicativo e não fornecerão suporte ou manutenção de qualquer tipo. Todas as provisões e garantias de qualquer tipo, expressas ou implícitas, incluindo mas não limitadas a quaisquer garantias de desempenho, integridade do processo ou funcionalidades particulares, são aqui renunciadas e excluídas a menos que de outra forma proibidas ou restritas pela legislação aplicável. Desenvolvido sob EE FPA.",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  },
+  "websiteURL": "https://www.vtex.com"
+}

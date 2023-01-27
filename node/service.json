@@ -1,0 +1,97 @@
+{
+  "memory": 256,
+  "ttl": 60,
+  "timeout": 10,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "events": {
+    "sellerCronEvent": {
+      "keys": ["onboardingSeller.cron"]
+    }
+  },
+  "routes": {
+    "invitations": {
+      "path": "/_v/onboarding-seller/invitations",
+      "public": true
+    },
+    "publicPrelead": {
+      "path": "/_v/onboarding-seller/pub/invitations",
+      "public": true
+    },
+    "invitation": {
+      "path": "/_v/onboarding-seller/invitations/:invitationId",
+      "public": true
+    },
+    "totalizers": {
+      "path": "/_v/onboarding-seller/invitations/totalizers",
+      "public": true
+    },
+    "recaptcha": {
+      "path": "/_v/onboarding-seller/recaptcha",
+      "public": true
+    },
+    "documents": {
+      "path": "/_v/onboarding-seller/invitations/:invitationId/documents",
+      "public": true
+    },
+    "cron": {
+      "path": "/_v/onboarding-seller/cron",
+      "public": true
+    },
+    "seller": {
+      "path": "/_v/onboarding-seller/seller",
+      "public": false,
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["get", "patch"],
+          "principals": [
+            "vrn:apps:*:*:*:app/vtex.easy-shipping-setup@*",
+            "vrn:apps:*:*:*:app/vtex.seller-dashboard@*"
+          ]
+        }
+      ]
+    },
+    "sellerAccount": {
+      "path": "/_v/onboarding-seller/seller/:sellerAccountName",
+      "public": true
+    },
+    "generateTemplates": {
+      "path": "/_v/onboarding-seller/generateTemplates",
+      "public": true
+    },
+    "connectSeller": {
+      "path": "/_v/onboarding-seller/connectSeller/:invitationId",
+      "public": true
+    },
+    "ping": {
+      "path": "/_v/onboarding-seller/ping",
+      "public": true
+    },
+    "sellerLogin": {
+      "path": "/_v/onboarding-seller/seller-login",
+      "public": true
+    },
+    "sellerHtmlFormat": {
+      "path": "/_v/onboarding-seller/seller-html/:sellerAccountName",
+      "public": true
+    },
+    "sellerSchema": {
+      "path": "/_v/onboarding-seller/sellerSchema",
+      "public": true
+    },
+    "paymentMethodSchema": {
+      "path": "/_v/onboarding-seller/paymentMethodSchema",
+      "public": true
+    },
+    "indices": {
+      "path": "/_v/onboarding-seller/sellerIndices",
+      "public": true
+    },
+    "defaultCommission": {
+      "path": "/_v/onboarding-seller/default-commission",
+      "public": true
+    }
+  }
+}

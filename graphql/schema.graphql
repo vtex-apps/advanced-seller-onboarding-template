@@ -1,0 +1,35 @@
+type Query {
+  getSeller(id: String): Seller
+  getSettingsQuery: Settings
+}
+
+type Settings {
+  uploadFilesImage: String
+  termsAndConditionsPages: [TermsAndConditionsPages]
+}
+
+type TermsAndConditionsPages{
+  pageName: String
+  pageURL: String
+}
+
+type Seller {
+  sellerAccountName: String
+  companyName: String
+  sellerName: String
+  companyDescription: String
+  companyCounty: String
+  companyCity: String
+  companyAddress: String
+  tradeRegistrationNumber: String
+  vatin: String
+  iban: String
+  companyBank: String
+  phone: String
+  email: String
+  etaFrom: Int
+  etaTo: Int
+  returnPeriod: Int
+  shippingCharge: Int
+  freeDeliveryThreshold: String
+}

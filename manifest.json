@@ -1,0 +1,235 @@
+{
+  "vendor": "vtexromania",
+  "name": "advanced-seller-onboarding-template",
+  "version": "0.0.0",
+  "title": "Advanced Seller Onboarding for VTEX Marketplaces",
+  "description": "Extends the default flow for inviting sellers",
+  "builders": {
+    "assets": "0.x",
+    "node": "6.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "admin": "0.x",
+    "store": "0.x",
+    "styles": "2.x",
+    "graphql": "1.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.phone-field": "0.x",
+    "vtex.css-handles": "0.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.store": "2.x",
+    "vtex.store-icons": "0.x",
+    "vtex.file-manager": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.my-account-commons": "1.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.apps-graphql": "2.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "vtex.file-manager:file-manager-read-write"
+    },
+    {
+      "name": "template-criar"
+    },
+    {
+      "name": "template-editar"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexassets.com/",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.myvtex.com",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "app.io.vtex.com/vtex.file-manager/v0/{{account}}/preleadform",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/sessions/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "www.google.com",
+        "path": "/recaptcha/api/siteverify"
+      }
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "colossus-fire-event"
+    }
+  ],
+  "settingsSchema": {
+    "title": "Onboarding seller",
+    "type": "object",
+    "properties": {
+      "preleadFormBaseURL": {
+        "title": "Prelead form URL",
+        "description": "The URL to use when sending the prelead email",
+        "type": "string"
+      },
+      "loginNotFoundRedirectUrl": {
+        "title": "Login not found redirect URL",
+        "description": "The URL to redirect to when a seller login attempt fails",
+        "type": "string"
+      },
+      "sellerType": {
+        "title": "Seller type",
+        "type": "string",
+        "description": "White label sellers will not be shown to the users",
+        "enum": [
+          "Regular",
+          "White label"
+        ],
+        "default": "Regular"
+      },
+      "paymentProviderSecret": {
+        "title": "PaymentProvider Secret",
+        "description": "Your secret key",
+        "type": "string",
+        "format": "password",
+        "access": "private"
+      },
+      "adminEmail": {
+        "title": "Store Admin Email",
+        "description": "Used for receiving notifications regarding the on-boarding process",
+        "type": "string",
+        "access": "private"
+      },
+      "adminName": {
+        "title": "Store Admin Name",
+        "type": "string",
+        "access": "private"
+      },
+      "htmlSellerInfoTemplate": {
+        "title": "Seller-Info Template in HTML",
+        "type": "string",
+        "access": "private"
+      },
+      "uploadFilesImage": {
+        "title": "Image for uploading files",
+        "type": "string",
+        "access": "private"
+      },
+      "termsAndConditionsPages": {
+        "title": "Terms and Conditions Pages",
+        "type": "array",
+        "access": "private",
+        "description": "Terms and Conditions Pages from Seller-Onboarding Form",
+        "items": {
+          "type": "object",
+          "properties": {
+            "pageName": {
+              "title": "Page title",
+              "description": "Page title created in CMS",
+              "type": "string"
+            },
+            "pageURL": {
+              "title": "Page URL",
+              "description": "Page URL created in CMS",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "recaptcha": {
+        "title": "ReCAPTCHA",
+        "description": "Google ReCAPTCHA settings.",
+        "type": "object",
+        "properties": {
+          "siteKey": {
+            "title": "Site key",
+            "description": "ReCAPTCHA public site key, for use on the frontend",
+            "type": "string"
+          },
+          "secretKey": {
+            "title": "Secret key",
+            "description": "ReCAPTCHA secret key, used to communicate with the Google API",
+            "type": "string",
+            "format": "password",
+            "access": "private"
+          }
+        }
+      },
+      "cronToken": {
+        "title": "Scheduler auth token",
+        "description": "Token to use when validating scheduler requests",
+        "type": "string"
+      },
+      "ipWhitelist": {
+        "title": "IP whitelist",
+        "description": "IP whitelist for the prelead endpoint",
+        "access": "private",
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "format": "ipv4"
+        }
+      },
+      "corsWhitelist": {
+        "title": "CORS whitelist",
+        "description": "Domains to whitelist for CORS",
+        "access": "private",
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "billingOptions": {
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true,
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "title": "SellerPaymentMethods",
+    "type": "object",
+    "properties": {
+      "sellerId": {
+        "type": "string",
+        "title": "Seller Id"
+      },   
+      "paymentProviderMerchantId": {
+        "title": "PaymentProvider Merchant Id",
+        "type": "string"
+      }
+    },
+    "v-indexed": [
+      "sellerId",
+      "paymentProviderMerchantId"
+    ],
+    "additionalProperties": false,
+    "v-cache": false,
+    "v-immediate-indexing": true
+  }

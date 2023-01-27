@@ -1,0 +1,75 @@
+{
+  "onboarding-seller-form": {
+    "component": "InviteFormContainerStore"
+  },
+  "onboarding-prelead-form": {
+    "component": "PreleadForm"
+  },
+  "DataProvider": {
+    "component": "DataProvider"
+  },
+  "seller-link": {
+    "component": "SellerLink"
+  },
+  "store.seller": {},
+  "seller-account-name": {
+    "around": ["DataProvider"],
+    "component": "SellerAccountName"
+  },
+  "company-name": {
+    "around": ["DataProvider"],
+    "component": "CompanyName"
+  },
+  "company-description": {
+    "around": ["DataProvider"],
+    "component": "CompanyDescription"
+  },
+  "company-county": {
+    "around": ["DataProvider"],
+    "component": "CompanyCounty"
+  },
+  "company-city": {
+    "around": ["DataProvider"],
+    "component": "CompanyCity"
+  },
+  "company-address": {
+    "around": ["DataProvider"],
+    "component": "CompanyAddress"
+  },
+  "company-bank": {
+    "around": ["DataProvider"],
+    "component": "CompanyBank"
+  },
+  "company-phone": {
+    "around": ["DataProvider"],
+    "component": "CompanyPhone"
+  },
+  "company-email": {
+    "around": ["DataProvider"],
+    "component": "CompanyEmail"
+  },
+  "company-eta": {
+    "around": ["DataProvider"],
+    "component": "CompanyEta"
+  },
+  "company-shipping-cost": {
+    "around": ["DataProvider"],
+    "component": "CompanyShippingCost"
+  },
+  "company-free-shipping": {
+    "around": ["DataProvider"],
+    "component": "CompanyFreeShipping"
+  },
+  "company-iban": {
+    "around": ["DataProvider"],
+    "component": "CompanyIban"
+  },
+  "company-vatin": {
+    "around": ["DataProvider"],
+    "component": "CompanyVatin"
+  },
+  "company-traderegistrationnumber": {
+    "around": ["DataProvider"],
+    "component": "CompanyTradeRegistrationNumber"
+  }
+}

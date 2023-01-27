@@ -1,0 +1,21 @@
+[
+  {
+    "id": "advanced-onboarding-seller",
+    "section": "marketplace",
+    "titleId": "vtex-menu.onboarding-seller.app.title",
+    "adminVersion": 4,
+    "subSection": "advanced-onboarding-seller",
+    "subSectionItems": [
+      {
+        "id": "advanced-onboarding-seller-invitations",
+        "labelId": "vtex-menu.onboarding-seller.invitations",
+        "path": "/admin/onboarding-seller/invitations"
+      },
+      {
+        "id": "advanced-onboarding-seller-invitations-default-commission",
+        "labelId": "vtex-menu.onboarding-seller.default-commission",
+        "path": "/admin/onboarding-seller/default-commission"
+      }
+    ]
+  }
+]
