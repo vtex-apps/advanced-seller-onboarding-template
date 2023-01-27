@@ -1,0 +1,18 @@
+{
+  "store.custom#seller-form": {
+    "path": "/seller-form"
+  },
+  "store.custom#prelead-form": {
+    "path": "/prelead-form/:invitationId"
+  },
+  "store.seller": {
+    "title": "Seller",
+    "path": "/seller/:slug"
+  },
+  "store.custom#vtex-terms": {
+    "path": "/vtex-terms"
+  },
+  "store.custom#seller-terms-and-conditions": {
+    "path": "/seller-terms-and-conditions"
+  }
+}

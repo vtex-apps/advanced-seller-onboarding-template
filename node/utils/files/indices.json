@@ -1,0 +1,17 @@
+[
+    {
+        "name": "uniqueVatin",
+        "multiple": false,
+        "fields": "vatin"
+    },
+    {
+        "name": "uniqueSellerAccountName",
+        "multiple": false,
+        "fields": "sellerAccountName"
+    },
+    {
+        "name": "uniqueEmail",
+        "multiple": false,
+        "fields": "email"
+    }
+]

@@ -1,0 +1,9 @@
+query getSettingsApp{
+  getSettingsQuery{
+    uploadFilesImage
+    termsAndConditionsPages {
+    pageName
+    pageURL
+    }
+  }
+}

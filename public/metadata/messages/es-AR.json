@@ -1,0 +1,21 @@
+{
+  "name": "Advanced Seller Onboarding",
+  "headline": "Selección y registro de vendedores de Marketplace mejorados",
+  "overview": "La aplicación mejora la incorporación de vendedores a través de un proceso de varios pasos que permite el envío de un formulario de registro configurable, la filtración de vendedores potenciales, así como la aceptación de los términos y condiciones del mercado. La aplicación permite la sincronización rápida de categorías entre el mercado y el vendedor, así como la validación de los datos fiscales. La incorporación avanzada del vendedor también incluye la aplicación Enlace del vendedor, una aplicación que muestra un bloque de página de vendedor estático.",
+  "features": [
+    "Permite el envío de un formulario de alta configurable",
+    "Permite la filtración de posibles vendedores del mercado",
+    "Muestra el estado de incorporación del vendedor en tiempo real.",
+    "Incluye reCAPTCHA en los formularios de validación.",
+    "Incluye un formulario de aceptación de términos y condiciones.",
+    "Incluye un bloque de página de vendedor estático.",
+    "Permite la incorporación rápida de vendedores.",
+    "Permite la validación del código fiscal.",
+    "Permite el acceso basado en API."
+  ],
+  "additionalInformation": "Esta aplicación y todos los servicios asociados se proporcionan 'tal cual', sin garantía de ningún tipo, ni expresa ni implícita. Ni el editor ni sus socios, afiliados, empleados o contratistas garantizan que esta aplicación satisfaga sus necesidades, proporcione un uso ininterrumpido o funcione sin retrasos o sin errores. Ni el editor ni sus socios, afiliados, empleados o contratistas asumen ninguna responsabilidad por los errores y el mal funcionamiento de la aplicación y no proporcionarán soporte o mantenimiento de ningún tipo. Todas las disposiciones y garantías de cualquier tipo, expresas o implícitas, incluyendo pero sin limitarse a cualquier garantía de rendimiento, integridad del proceso, o funcionalidades particulares, son por la presente rechazadas y excluidas a menos que se prohíba o restrinja por la ley aplicable. Desarrollado bajo EE FPA.",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  },
+  "websiteURL": "https://www.vtex.com"
+}

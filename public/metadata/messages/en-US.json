@@ -1,0 +1,21 @@
+{
+  "name": "Advanced Seller Onboarding",
+  "headline": "Improved Marketplace Seller Selection and Registration",
+  "overview": "The app improves seller onboarding through a multistep process that allows the sending of a configurable signup form, the filtration of potential sellers, as well as the acceptance of the marketplace’s terms & conditions. The app allows for quick category synchronization between the marketplace and the seller, as well as the validation of fiscal data. Advanced Seller Onboarding also includes the Seller Link app, an app that displays a static seller page block.",
+  "features": [
+    "Allows the sending of a configurable onboarding form",
+    "Allows the filtration of potential marketplace sellers",
+    "Displays seller onboarding status in real-time.",
+    "Includes reCAPTCHA on validation forms.",
+    "Includes a terms & conditions acceptance form.",
+    "Includes a static seller page block.",
+    "Allows quick seller onboarding.",
+    "Allows fiscal code validation.",
+    "Allows API-based access."
+  ],
+  "additionalInformation": "The app will work with any external sellers, as long as the marketplace is on VTEX. This app and all affiliated services are provided “as is”, without warranty of any kind, either express or implied. Neither the publisher nor its partners, affiliates, employees, or contractors guarantee that this app will meet your requirements, provide uninterrupted use, or operate without delay or without error. Neither the publisher nor its partners, affiliates, employees, or contractors assume any responsibility for any errors and malfunctions within the app and will not provide support or maintenance of any kind. All provisions and warranties of any kind, express or implied, including but not limited to any guarantees of performance, process integrity, or particular functionalities, are hereby disclaimed and excluded unless otherwise prohibited or restricted by applicable law. Developed under EE FPA.",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  },
+  "websiteURL": "https://www.vtex.com"
+}

@@ -1,0 +1,22 @@
+query getSeller($id: String!) {
+  getSeller(id: $id) {
+    sellerAccountName
+    companyName
+    sellerName
+    companyCity
+    companyBank
+    companyCounty
+    companyAddress
+    companyDescription
+    etaFrom
+    etaTo
+    email
+    phone
+    tradeRegistrationNumber
+    vatin
+    iban
+    shippingCharge
+    freeDeliveryThreshold
+    returnPeriod
+  }
+}

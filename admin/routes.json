@@ -1,0 +1,18 @@
+{
+  "admin.app.onboarding-seller-invitations": {
+    "component": "TableView",
+    "path": "/admin/app/onboarding-seller/invitations"
+  },
+  "admin.app.onboarding-seller-invitation": {
+    "component": "EntryView",
+    "path": "/admin/app/onboarding-seller/invitations/:invitationId"
+  },
+  "admin.app.onboarding-seller-invitation-form": {
+    "component": "InviteFormContainerAdmin",
+    "path": "/admin/app/onboarding-seller/form"
+  },
+  "admin.app.onboarding-seller-default-commission": {
+    "component": "DefaultCommissionDashboard",
+    "path": "/admin/app/onboarding-seller/default-commission"
+  }
+}

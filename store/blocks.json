@@ -1,0 +1,17 @@
+{
+  "store.custom#seller-form": {
+    "blocks": [
+      "onboarding-seller-form"
+    ]
+  },
+  "store.custom#prelead-form": {
+    "blocks": [
+      "onboarding-prelead-form"
+    ]
+  },
+  "onboarding-prelead-form": {
+    "props": {  
+      "imageProp": "assets/file-upload.png"  
+    }  
+  }
+}
